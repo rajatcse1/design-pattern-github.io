@@ -1,0 +1,21 @@
+html,
+body
+{
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-size: 12px;
+    font-family: helvetica;
+}
+
+#vertical,
+#horizontal
+{
+    height:100%;
+}
+
+#vertical
+{
+    border-width: 0;
+}
