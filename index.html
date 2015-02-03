@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Welcome to Kendo UI</title>
+    <title>All About Design Patterns</title>
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common-bootstrap.min.css">
     <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="style.css" />
 
     <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
@@ -31,354 +32,87 @@
         // also add kendo.aspnetmvc.min.js or kendo.timezones.min.js, if needed
     }
     </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- custom scrollbar plugin (latest version) via Github with fallback to local -->
+    <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+    window.mCustomScrollbar || document.write('<script src="../jquery.mCustomScrollbar.concat.min.js"><\/script>')
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 </head>
 
 <body>
     <div id="vertical">
-        <div>
+        <div id="topPane">
             <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">Design Patterns v1.0</a>
                 </div>
             </nav>
         </div>
-        <div>
+        <div id="centerPane">
             <div id="horizontal">
-                <div>
+                <div id="leftPane" class="navbar-default content mCustomScrollbar">
                     <p>
-                        <ul id="treeview">
-                            <li data-expanded="true">
-                                Creational Patterns
-                                <ul>
-                                    <li>Abstract Factory</li>
-                                    <li>Builder</li>
-                                    <li>Factory Method</li>
-                                    <li>Prototype</li>
-                                    <li>Singleton</li>
-                                </ul>
-                            </li>
-                            <li data-expanded="true">
-                                Structural Patterns
-                                <ul>
-                                    <li>Adapter</li>
-                                    <li>Bridge</li>
-                                    <li>Composite</li>
-                                    <li>Decorator</li>
-                                    <li>Facade</li>
-                                    <li>Flyweight</li>
-                                    <li>Proxy</li>
-                                </ul>
-                            </li>
-                            <li data-expanded="true">
-                                Behavioral Patterns
-                                <ul>
-                                    <li>Chain of Resp.</li>
-                                    <li>Command</li>
-                                    <li>Interpreter</li>
-                                    <li>Iterator</li>
-                                    <li>Mediator</li>
-                                    <li>Memento</li>
-                                    <li>Observer</li>
-                                    <li>State</li>
-                                    <li>Strategy</li>
-                                    <li>Template Method</li>
-                                    <li>Visitor</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div id="treeview"></div>
                     </p>
                 </div>
-                <div>
-                    <section>
-                        <h1>Creational Patterns</h1>
-                        <section>
-                            <h2>Abstract Factory</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Builder</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Factory Method</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Prototype</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Singleton</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
+                <div id="middlePane">
 
-                        </section>
-                        <section>
-                            <h1>Structural Patterns</h1>
-                        </section>
-                        <section>
-                            <h2>Adapter</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Bridge</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Composite</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Decorator</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Facade</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Flyweight</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Proxy</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-
-                        </section>
-                        <section>
-                            <h1>Behavioral Patterns</h1>
-                        </section>
-                        <section>
-                            <h2>Chain of Resp.</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Command</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Interpreter</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Iterator</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Mediator</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Memento</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Observer</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>State</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Strategy</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Template Method</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                        <section>
-                            <h2>Visitor</h2>
-                            <hr/>
-                            <p>
-                                <article>
-                                    <h3>Example 1:</h3>
-                                    <p>details here</p>
-                                </article>
-                            </p>
-                        </section>
-                    </section>
                 </div>
-                <div>
+                <div id="rightPane" class="mCustomScrollbar">
                     <p>
-                        code here
+                        <pre class="prettyprint lang-java linenums">
+/*
+  Create DataOutputStream from FileOutputStream
+  This Java example shows how to create DataOutputStream from FileOutputStream
+  object.
+*/
+ 
+import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+ 
+public class CreateDataOutputStream {
+ 
+  public static void main(String[] args) {
+   
+    String strFilePath = "C://FileIO//demo.txt";
+   
+    try
+    {
+      //create FileOutputStream object
+      FileOutputStream fos = new FileOutputStream(strFilePath);
+     
+      /*
+       * To create DataOutputStream object from FileOutputStream use,
+       * DataOutputStream(OutputStream os) constructor.
+       *
+       */
+     
+       DataOutputStream dos = new DataOutputStream(fos);
+    }
+    catch(FileNotFoundException fe)
+    {
+      System.out.println("FileNotFoundException : " + fe);
+    }
+ 
+  }
+}
+                        </pre>
                     </p>
                 </div>
             </div>
         </div>
-        <div>
+        <div id="bottomPane" class="navbar navbar-default">
             <p>
                 <a href="https://github.com/rajatcse1">rajatcse1</a>
             </p>
         </div>
     </div>
 
-    <script>
-    $(document).ready(function() {
-        $("#vertical").kendoSplitter({
-            orientation: "vertical",
-            panes: [{
-                collapsible: false,
-                resizable: false,
-                scrollable: false,
-                size: "40px"
-            }, {
-                collapsible: false
-            }, {
-                collapsible: false,
-                resizable: false,
-                scrollable: false,
-                size: "30px"
-            }]
-        });
-
-        $("#horizontal").kendoSplitter({
-            panes: [{
-                collapsible: true,
-                size: "20%"
-            }, {
-                collapsible: false
-            }, {
-                collapsible: true,
-                size: "40%"
-            }]
-        });
-
-        $("#treeview").kendoTreeView();
-    });
-    </script>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 
 </html>
